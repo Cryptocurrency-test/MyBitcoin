@@ -1,6 +1,5 @@
 # MyBitcoin - a cryptocurrency implementation in less than 1500 lines of code
 
-[![Build Status](https://travis-ci.org/conradoqg/naivecoin.svg?branch=master)](https://travis-ci.org/conradoqg/naivecoin) [![Coverage Status](https://coveralls.io/repos/github/conradoqg/naivecoin/badge.svg?branch=master)](https://coveralls.io/github/conradoqg/naivecoin?branch=master)
 
 ### Motivation
 Cryptocurrencies and smart-contracts on top of a blockchain aren't the most trivial concepts to understand, things like wallets, addresses, block proof-of-work, transactions and their signatures, make more sense when they are in a broad context. Inspired by [naivechain](https://github.com/lhartikk/naivechain), this project is an attempt to provide as concise and simple an implementation of a cryptocurrency as possible.
@@ -8,7 +7,7 @@ Cryptocurrencies and smart-contracts on top of a blockchain aren't the most triv
 ### What is cryptocurrency
 [From Wikipedia](https://en.wikipedia.org/wiki/Cryptocurrency) : A cryptocurrency (or crypto currency) is a digital asset designed to work as a medium of exchange using cryptography to secure the transactions and to control the creation of additional units of the currency.
 
-### Key concepts of Naivecoin
+### Key concepts of MyBitcoin
 * Components
     * HTTP Server
     * Node
@@ -280,11 +279,11 @@ An extra responsibility is to get a number of confirmations for a given transact
 
 ```sh
 # Run a node
-$ node bin/naivecoin.js
+$ node bin/MyBitcoin.js
 
 # Run two nodes
-$ node bin/naivecoin.js -p 3001 --name 1
-$ node bin/naivecoin.js -p 3002 --name 2 --peers http://localhost:3001
+$ node bin/MyBitcoin.js -p 3001 --name 1
+$ node bin/MyBitcoin.js -p 3002 --name 2 --peers http://localhost:3001
 
 # Access the swagger API
 http://localhost:3001/api-docs/
@@ -464,15 +463,15 @@ $ curl -X GET --header 'Content-Type: application/json' 'http://localhost:3001/b
 
 ```sh
 # Build the image
-$ docker build . -t naivecoin
+$ docker build . -t MyBitcoin
 
-# Run naivecoin in a docker
+# Run MyBitcoin in a docker
 $ ./dockerExec.sh
 
-# Run naivecoin in a docker using port 3002
+# Run MyBitcoin in a docker using port 3002
 $ ./dockerExec.sh -p 3002
 
-# Run naivecoin in a docker options
+# Run MyBitcoin in a docker options
 $ ./dockerExec.sh -h
 Usage: ./dockerExec.sh -a HOST -p PORT -l LOG_LEVEL -e PEERS -n NAME
 
@@ -484,8 +483,8 @@ $ docker-compose up
 
 ```sh
 # Command-line options
-$ node bin/naivecoin.js -h
-Usage: bin\naivecoin.js [options]
+$ node bin/MyBitcoin.js -h
+Usage: bin\MyBitcoin.js [options]
 
 Options:
   -a, --host       Host address. (localhost by default)
@@ -501,8 +500,8 @@ Options:
 
 ```sh
 # Cloning repository
-$ git clone git@github.com:conradoqg/naivecoin.git
-$ cd naivecoin
+$ git clone git@github.com:Cryptocurrency-test/MyBitcoin.git
+$ cd MyBitcoin
 $ npm install
 
 # Testing
@@ -516,7 +515,3 @@ If this implementation does something wrong, please feel free to contribute by o
 If you contribute code to this project, you are implicitly allowing your code
 to be distributed under the Apache 2.0 license. You are also implicitly verifying that
 all code is your original work.
-
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/conradoqg/naivecoin.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20it%20out%3A%20Naivecoin%20-%20a%20cryptocurrency%20implementation%20in%20less%20than%201500%20lines%20of%20code&url=%5Bobject%20Object%5D)
-
-[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/conradoqg/naivecoin/master/LICENSE)
