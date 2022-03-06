@@ -1,4 +1,4 @@
-# Testcoin - a cryptocurrency implementation in less than 1500 lines of code
+# MyBitcoin - a cryptocurrency implementation in less than 1500 lines of code
 
 [![Build Status](https://travis-ci.org/conradoqg/naivecoin.svg?branch=master)](https://travis-ci.org/conradoqg/naivecoin) [![Coverage Status](https://coveralls.io/repos/github/conradoqg/naivecoin/badge.svg?branch=master)](https://coveralls.io/github/conradoqg/naivecoin?branch=master)
 
@@ -31,7 +31,7 @@ Not all components in this implementation follow the complete list of requiremen
 #### HTTP Server
 Provides an API to manage the blockchain, wallets, addresses, transaction creation, mining request and peer connectivity.
 
-It's the starting point to interact with the Testcoin, and every node provides a swagger API to make this interaction easier. Available endpoints:
+It's the starting point to interact with the MyBitcoin, and every node provides a swagger API to make this interaction easier. Available endpoints:
 
 ##### Blockchain
 
