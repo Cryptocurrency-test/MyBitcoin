@@ -18,7 +18,7 @@
             "env": {
                 "HTTP_PORT": "3002",                
                 "NAME": "2",
-                "PEERS": "http://localhost:3001"
+                "PEERS": "http://0.0.0.0:3001"
             }
         }
     ]

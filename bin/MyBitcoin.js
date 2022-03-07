@@ -4,7 +4,7 @@ const MyBitcoin = require('./../lib/MyBitcoin');
 const argv = require('yargs')
     .usage('Usage: $0 [options]')
     .alias('a', 'host')
-    .describe('a', 'Host address. (localhost by default)')
+    .describe('a', 'Host address. (0.0.0.0 by default)')
     .alias('p', 'port')
     .describe('p', 'HTTP port. (3001 by default)')
     .alias('l', 'log-level')
